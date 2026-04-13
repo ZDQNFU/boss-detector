@@ -24,8 +24,8 @@
 ### 1️⃣ 创建环境
 
 ```bash
-conda create -n brower-agent python=3.10
-conda activate brower-agent
+conda create -n boss-detector python=3.10
+conda activate boss-detector
 ```
 ### 2️⃣ 安装依赖
 
