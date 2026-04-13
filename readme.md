@@ -20,6 +20,29 @@
 | **PyAutoGUI** | 模拟键盘快捷键 | 执行切换桌面、静音等操作 |
 | **OpenCV** | 摄像头画面捕获 | 高效处理视频流 |
 
+## 🚀 快速开始
+### 1️⃣ 创建环境
+
+```bash
+conda create -n brower-agent python=3.10
+conda activate brower-agent
+```
+### 2️⃣ 安装依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ 注册人脸
+```bash
+#将自己的人脸图片放入known_faces下
+```
+
+### 4️⃣ 运行项目
+```bash
+python main.py
+```
+
 ## 📁 项目结构
 
 ```text
@@ -31,3 +54,25 @@ brower_agent/
 ├── known_faces/           # 存放“自己”的照片用于注册
 │   └── me.jpg
 └── README.md              # 说明文件
+```
+
+## ⚠️ 常见问题
+### 1. pyautogui报错ImportError: cannot import name '_pyautogui_win'
+```bash
+pip uninstall pyautogui -y
+pip install --no-cache-dir --force-reinstall pyautogui==0.9.54
+```
+
+### 2. face_recognition_models 报错Please install `face_recognition_models`
+```bash
+pip uninstall face-recognition-models -y
+pip install --no-cache-dir git+https://github.com/ageitgey/face_recognition_models
+```
+
+## 🧾 License
+```bash
+MIT License
+```
+
+## ⭐ Star
+如果这个项目对你有帮助，欢迎点个 Star ⭐
