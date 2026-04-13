@@ -31,3 +31,17 @@ brower_agent/
 ├── known_faces/           # 存放“自己”的照片用于注册
 │   └── me.jpg
 └── README.md              # 说明文件
+
+⚠️ 可能遇到的问题
+1. ImportError: cannot import name '_pyautogui_win' from partially initialized module 'pyautogui'
+
+```python
+pip uninstall pyautogui -y
+pip install --no-cache-dir --force-reinstall pyautogui==0.9.54
+
+2.  face_recognition_models相关问题
+
+```python
+pip uninstall face-recognition-models -y
+pip install --no-cache-dir git+https://github.com/ageitgey/face_recognition_models
+
