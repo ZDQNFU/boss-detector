@@ -46,7 +46,7 @@ python main.py
 ## 📁 项目结构
 
 ```text
-brower_agent/
+boss-detector/
 ├── main.py                # 主程序入口
 ├── detector.py            # 人脸检测与识别逻辑
 ├── switcher.py            # 应急切换动作模块
